@@ -1,0 +1,8 @@
+<div>
+  <button pButtonType= "button" label = "add" (click) = "addEmployee()">Add</button>
+</div>
+
+<div *ngFor ="let emp of filteredList">
+  <app-employeedetail [employee] = "emp" (refereshEmployeeList) = "refereshList()"></app-employeedetail>
+</div>
+<router-outlet></router-outlet>

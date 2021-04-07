@@ -1,0 +1,41 @@
+<div>
+  <div>
+    <p>FirstName:</p>{{employee.firstName}}
+  </div>
+  <div>
+    <p>LastName:</p>{{employee.lastName}}
+  </div>
+  <div>
+    <p>Email:</p>{{employee.email}}
+  </div>
+  <div>
+    <p>Contact:{{employee.contact}}</p>
+  </div>
+  <div>
+    <p>Address:{{employee.address}}</p>
+  </div>
+  <div>
+    <p>UserName:{{employee.username}}</p>
+  </div>
+  <div>
+    <p>Password:{{employee.password}}</p>
+  </div>
+  <div>
+    <p>Gender:{{employee.gender}}</p>
+  </div>
+  <div>
+    <p>Qualification:{{employee.qualification}}</p>
+  </div>
+  <div>
+    <p>Experince:{{employee.experince}}</p>
+  </div>
+
+</div>
+
+<div>
+  <footer>
+    <button pButton type="button" label="edit" (click)="editEmployee()">Edit</button>
+    <button pButton type="button" label="delete" (click)="deleteEmployee(employee)">Delete</button>
+  </footer>
+</div>
+<router-outlet></router-outlet>
